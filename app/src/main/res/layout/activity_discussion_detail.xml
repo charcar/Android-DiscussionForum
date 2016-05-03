@@ -9,4 +9,67 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.guest.discussionforum.ui.DiscussionDetailActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="[Discussion Subject]"
+        android:id="@+id/subjectTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Author: "
+        android:id="@+id/authorTextView"
+        android:layout_below="@+id/subjectTextView"
+        android:layout_alignLeft="@+id/subjectTextView"
+        android:layout_alignStart="@+id/subjectTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[Message Body]"
+        android:id="@+id/messageTextView"
+        android:layout_below="@+id/authorTextView"
+        android:layout_alignLeft="@+id/authorTextView"
+        android:layout_alignStart="@+id/authorTextView" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/messageTextView"
+        android:id="@+id/android.support.v7.widget.RecyclerView">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_alignTop="@+id/authorTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[username]"
+        android:id="@+id/usernameTextView"
+        android:layout_below="@+id/android.support.v7.widget.RecyclerView"
+        android:layout_alignLeft="@+id/messageTextView"
+        android:layout_alignStart="@+id/messageTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author:"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/usernameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

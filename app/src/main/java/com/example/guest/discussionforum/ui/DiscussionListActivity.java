@@ -1,9 +1,9 @@
 package com.example.guest.discussionforum.ui;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
 
-import com.example.guest.discussionforum.R;
+        import com.example.guest.discussionforum.R;
 
 public class DiscussionListActivity extends AppCompatActivity {
 

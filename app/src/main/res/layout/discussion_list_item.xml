@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Author Name]"
+            android:textColor="@android:color/holo_blue_dark"
+            android:id="@+id/textView2" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Our discussion topic should display here."
+            android:text="[Our discussion topic should display here.]"
             android:id="@+id/subjectTextView" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Our body goes here."
-            android:id="@+id/bodyTextView"
-            android:layout_below="@+id/subjectTextView"/>
-
-    </LinearLayout>
 </LinearLayout>
