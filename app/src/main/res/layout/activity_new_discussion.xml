@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Subject"
-        android:id="@+id/editText"
+        android:id="@+id/subjectEditText"
         android:singleLine="true"
         android:layout_marginTop="30dp"
         android:layout_below="@+id/textView"
@@ -26,8 +26,8 @@
         android:hint="Body Text"
         android:inputType="textMultiLine"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
+        android:id="@+id/bodyEditText"
+        android:layout_below="@+id/subjectEditText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:text="Submit"
         android:id="@+id/submitNewTopicButton"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/bodyEditText"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
