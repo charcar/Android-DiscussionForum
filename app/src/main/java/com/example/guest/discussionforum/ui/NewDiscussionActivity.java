@@ -1,5 +1,6 @@
 package com.example.guest.discussionforum.ui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,9 +35,12 @@ public class NewDiscussionActivity extends AppCompatActivity implements View.OnC
     public void onClick(View view) {
         String subject = mSubjectEditText.getText().toString();
         String body = mBodyEditText.getText().toString();
-        Discussion newThread = new Discussion(subject, body);
+        String author = "userName";
+        Discussion newThread = new Discussion(subject, author, body);
         saveThreadToFirebase(newThread);
         Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(NewDiscussionActivity.this, DiscussionListActivity.class);
+        startActivity(intent);
     }
 
     public void saveThreadToFirebase(Discussion newThread) {
